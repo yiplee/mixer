@@ -62,7 +62,7 @@ func New(chars string) (*Mixer, error) {
 		}
 
 		if len(charMap) != length {
-			return nil, errors.New("chars is invalid")
+			return nil, errors.New("chars contains repeated characters")
 		}
 
 		return &Mixer{
